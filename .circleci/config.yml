@@ -45,7 +45,7 @@ jobs:
 
       - run:
           name: Check HTML common mistakes
-          command: bundle exec htmlproofer ./_site --assume-extension --check-html --disable-external --empty-alt-ignore --check-img-http
+          command: bundle exec htmlproofer ./_site --assume-extension --check-html --empty-alt-ignore --check-img-http --internal_domains "https://disinfo.quaidorsay.fr"
 
       - run:
           name: Validate HTML spec compliance
